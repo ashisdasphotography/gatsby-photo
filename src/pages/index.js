@@ -1,14 +1,10 @@
 import * as React from "react"
+import Layout from "../components/Layout"
 
 // markup
 const IndexPage = () => {
   return (
-    <nav>
-      <div>
-        <h1 className="uppercase text-center text-4xl pt-4">Ashis Das</h1>
-        <h2 className="text-center text-lg">Photography</h2>
-      </div>
-    </nav>
+    <Layout></Layout>
   )
 }
 
