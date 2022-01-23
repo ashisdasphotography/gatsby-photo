@@ -40,19 +40,19 @@ const Border = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="h-screen flex flex-row">
-                <div className="w-1/12 h-full border-r-2 border-black">
+            <div className="flex flex-row">
+                <div className="w-1/12 border-r-2 border-black">
 
                 </div>
-                <div className="w-10/12 h-full">
-
+                <div className="w-10/12">
+                    {props.children}
                 </div>
-                <div className="w-1/12 h-full border-l-2 border-black">
+                <div className="w-1/12 border-l-2 border-black">
 
                 </div>
             </div>
             <div>
-                <div className="flex flex-row"> {/* Logo */}
+                <div className="flex flex-row"> {/* footer */}
                     <div className="w-1/12">
                         <div className=" h-1/2 border-r-2 border-black">
 
