@@ -15,5 +15,19 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }, "gatsby-plugin-postcss"]
+  }, "gatsby-plugin-postcss",
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `frontpage`,
+      path: `${__dirname}/src/data`,
+    },
+  },
+  "gatsby-transformer-yaml",
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `./src/data/`,
+    },
+  }]
 };

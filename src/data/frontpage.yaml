@@ -1,0 +1,4 @@
+- image: ../images/front/car.jpg
+  caption: Car
+- image: ../images/icon.png
+  caption: Icon
