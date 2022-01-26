@@ -1,4 +1,8 @@
 - image: ../images/front/car.jpg
   caption: Car
-- image: ../images/icon.png
-  caption: Icon
+- image: ../images/front/bird.jpg
+  caption: Bird
+- image: ../images/front/river.jpg
+  caption: River
+- image: ../images/front/treebird.jpg
+  caption: Tree bird

@@ -1,15 +1,17 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage} from "gatsby-plugin-image"
+import { useImageSliderMetadata } from "./sliderMetadata"
 
 const ImageSlider = () => {
+    const data = useImageSliderMetadata();
+
+    console.log("Loading data from ImageSlider: ", data);
+
     return (
         <div className="flex justify-center h-auto p-8">
-            <StaticImage
-                src="../../images/front/car.jpg"
-                alt="A dinosaur"
-                placeholder="dominantColor"
-                className="mx-16"
-            />
+            {data.map((image, index) => 
+                <GatsbyImage image={getImage(image.image)} alt="Sample Alter" key={index}/>
+            )}
         </div>
 
     )
