@@ -8,7 +8,7 @@ export const useImageSliderMetadata = () => {
                 nodes {
                     image {
                             childImageSharp {
-                            gatsbyImageData(height: 800)
+                                gatsbyImageData(height: 800)
                         }
                     }
                 }

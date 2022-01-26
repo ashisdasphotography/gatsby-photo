@@ -52,7 +52,7 @@ const Border = (props) => {
                 </div>
             </div>
             <div>
-                <div className="flex flex-row"> {/* footer */}
+                <div className="flex flex-row mb-8"> {/* footer */}
                     <div className="w-1/12">
                         <div className=" h-1/2 border-r-2 border-black">
 
