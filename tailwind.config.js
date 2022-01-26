@@ -6,7 +6,10 @@ module.exports = {
     extend: {
       fontFamily: {
         "microsoft-yi-baiti": "Microsoft Yi Baiti",
-      }
+      },
+      letterSpacing: {
+        'sub-logo': '.5em',
+      },
     },
   },
   plugins: [],
