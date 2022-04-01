@@ -16,8 +16,7 @@ const ImageSlider = () => {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 5000,
-        pauseOnHover: false,
-        lazyLoad: 'ondemand'
+        pauseOnHover: false
     };
 
     console.log("Loading data from ImageSlider: ", data);
