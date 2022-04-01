@@ -8,7 +8,7 @@ const Border = (props) => {
                     <div className="h-1/2">
 
                     </div>
-                    <div className=" h-1/2 border-r-2 border-black">
+                    <div className=" h-1/2 border-r-2 border-gray-300">
 
                     </div>
                 </div>
@@ -16,7 +16,7 @@ const Border = (props) => {
                     <div className="h-1/2">
 
                     </div>
-                    <div className=" h-1/2 border-t-2 border-black">
+                    <div className=" h-1/2 border-t-2 border-gray-300">
 
                     </div>
                 </div>
@@ -27,7 +27,7 @@ const Border = (props) => {
                     <div className="h-1/2">
 
                     </div>
-                    <div className=" h-1/2 border-t-2 border-black">
+                    <div className=" h-1/2 border-t-2 border-gray-300">
 
                     </div>
                 </div>
@@ -35,26 +35,26 @@ const Border = (props) => {
                     <div className="h-1/2">
 
                     </div>
-                    <div className=" h-1/2 border-l-2 border-black">
+                    <div className=" h-1/2 border-l-2 border-gray-300">
 
                     </div>
                 </div>
             </div>
             <div className="flex flex-row">
-                <div className="w-1/12 border-r-2 border-black">
+                <div className="w-1/12 border-r-2 border-gray-300">
 
                 </div>
                 <div className="w-10/12">
                     {props.children}
                 </div>
-                <div className="w-1/12 border-l-2 border-black">
+                <div className="w-1/12 border-l-2 border-gray-300">
 
                 </div>
             </div>
             <div>
                 <div className="flex flex-row mb-8"> {/* footer */}
                     <div className="w-1/12">
-                        <div className=" h-1/2 border-r-2 border-black">
+                        <div className=" h-1/2 border-r-2 border-gray-300">
 
                         </div>
                         <div className="h-1/2">
@@ -62,7 +62,7 @@ const Border = (props) => {
                         </div>
                     </div>
                     <div className="w-3/12">
-                        <div className="h-1/2 border-b-2 border-black">
+                        <div className="h-1/2 border-b-2 border-gray-300">
 
                         </div>
                     </div>
@@ -72,7 +72,7 @@ const Border = (props) => {
                         </div>
                     </div>
                     <div className="w-3/12">
-                        <div className="h-1/2 border-b-2 border-black">
+                        <div className="h-1/2 border-b-2 border-gray-300">
 
                         </div>
                         <div>
@@ -80,7 +80,7 @@ const Border = (props) => {
                         </div>
                     </div>
                     <div className="w-1/12">
-                        <div className=" h-1/2 border-l-2 border-black">
+                        <div className=" h-1/2 border-l-2 border-gray-300">
 
                         </div>
                     </div>
