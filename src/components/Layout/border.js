@@ -12,7 +12,7 @@ const Border = (props) => {
 
                     </div>
                 </div>
-                <div className="w-3/12">
+                <div className="w-1/12 sm:w-2/12 md:w-3/12">
                     <div className="h-1/2">
 
                     </div>
@@ -20,10 +20,10 @@ const Border = (props) => {
 
                     </div>
                 </div>
-                <div className="w-4/12">
+                <div className="w-8/12 sm:w-6/12 md:w-4/12">
                     {props.logo}
                 </div>
-                <div className="w-3/12">
+                <div className="w-1/12 sm:w-2/12 md:w-3/12">
                     <div className="h-1/2">
 
                     </div>
@@ -61,17 +61,17 @@ const Border = (props) => {
 
                         </div>
                     </div>
-                    <div className="w-3/12">
+                    <div className="w-1/12 sm:w-2/12 md:w-3/12">
                         <div className="h-1/2 border-b-2 border-gray-300">
 
                         </div>
                     </div>
-                    <div className="w-4/12">
+                    <div className="w-8/12 sm:w-6/12 md:w-4/12">
                         <div className="flex justify-center">
                             {props.footer}
                         </div>
                     </div>
-                    <div className="w-3/12">
+                    <div className="w-1/12 sm:w-2/12 md:w-3/12">
                         <div className="h-1/2 border-b-2 border-gray-300">
 
                         </div>
