@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Microsoft Yi Baiti";
-    src: url("../fonts/msyi.ttf");
-  }
+  font-family: "Microsoft Yi Baiti";
+  src: url("../fonts/msyi.ttf");
+}
+
+@font-face {
+  font-family: "Courier New";
+  src: url("../fonts/courier-new.woff") format("woff");
+}

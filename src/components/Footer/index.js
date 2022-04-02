@@ -1,9 +1,12 @@
 import * as React from "react"
+import CopyRight from "./copyRight";
+import MobileNumber from "./mobileNumber";
 
 const Footer = () => {
     return (
-        <div>
-            Copyright © 2020 Ashis Das
+        <div className="text-center mt-2">
+          <MobileNumber />
+          <CopyRight />
         </div>
     )
 }
