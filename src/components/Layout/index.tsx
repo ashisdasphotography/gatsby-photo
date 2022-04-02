@@ -3,16 +3,19 @@ import Logo from "../Logo";
 import Border from "./border";
 import Footer from "../Footer";
 import Navigation from "../Navigation"
-import ImageSlider from "../ImageSlider";
 
-const Layout = () => {
+interface LayoutProps {
+  body: JSX.Element
+}
+
+const Layout = (props: LayoutProps) => {
     return (
         <Border
             logo={<Logo />}
             footer={<Footer />} >
 
             <Navigation />
-            <ImageSlider />
+            {props.body}
         </Border>
     )
 }

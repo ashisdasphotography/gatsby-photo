@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import * as React from "react"
 
 const Border = (props) => {
@@ -21,7 +22,7 @@ const Border = (props) => {
                     </div>
                 </div>
                 <div className="w-8/12 sm:w-6/12 md:w-4/12">
-                    {props.logo}
+                    <Link to="/">{props.logo}</Link>
                 </div>
                 <div className="w-1/12 sm:w-2/12 md:w-3/12">
                     <div className="h-1/2">
