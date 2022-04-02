@@ -5,7 +5,7 @@ import MobileNumber from "./mobileNumber";
 
 const Footer = () => {
     return (
-        <div className="text-center mt-2">
+        <div className="text-center mt-3">
           <ExternalLinks />
           <MobileNumber />
           <CopyRight />

@@ -1,6 +1,7 @@
 import React from 'react'
-import { GoMail } from '@react-icons/all-files/go/GoMail'
+// import { GoMail } from '@react-icons/all-files/go/GoMail'
 import { FiInstagram } from '@react-icons/all-files/fi/FiInstagram'
+import { FiMail } from '@react-icons/all-files/fi/FiMail'
 
 const ExternalLinks = () => {
   return (
@@ -9,7 +10,7 @@ const ExternalLinks = () => {
         <FiInstagram className='mx-1'/>
       </a>
       <a href='mailto:contact@ashisdas.com'>
-        <GoMail className='mx-1'/>
+        <FiMail className='mx-1'/>
       </a>
     </div>
   )

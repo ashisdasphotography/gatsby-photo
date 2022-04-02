@@ -2,8 +2,8 @@ import React from 'react'
 
 const CopyRight = () => {
   return (
-    <div className="uppercase font-courier-new">
-      Copyright © 2020 Ashis Das
+    <div className="uppercase font-courier-new leading-none">
+      Copyright © 2022 Ashis Das
     </div>
   )
 }

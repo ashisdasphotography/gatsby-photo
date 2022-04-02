@@ -19,13 +19,11 @@ const ImageSlider = () => {
         pauseOnHover: false
     };
 
-    console.log("Loading data from ImageSlider: ", data);
-
     return (
         <Slider settings {...settings} className="md:w-4/5 mx-auto ">
             {data.map((image, index) =>
-                <div>
-                    <GatsbyImage image={getImage(image.image)} alt="Sample Alter" key={index} />
+                <div key={index}>
+                    <GatsbyImage image={getImage(image.image)} alt="Sample Alter"/>
                 </div>
             )}
         </Slider>
