@@ -1,13 +1,27 @@
+import { graphql } from 'gatsby'
 import React from 'react'
+import Gallery from '../components/Gallery'
 import Layout from "../components/Layout"
 
-const wedding = () => {
+const wedding = ({data}) => {
   return (
     <Layout
-      body={
-        <h1 className='md:w-4/5 mx-auto'>Wedding</h1>
-      }/>
+      body={<Gallery data={data.allWeddingYaml.nodes}/>} />
   )
 }
+
+export const query = graphql`
+  query WeddingPageQuery {
+    allWeddingYaml {
+      nodes {
+        image {
+            childImageSharp {
+              gatsbyImageData(height: 800)
+          }
+        }
+      }
+    }
+  }
+`
 
 export default wedding
