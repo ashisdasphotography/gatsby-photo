@@ -1,8 +1,10 @@
 import { data } from 'autoprefixer'
+import { Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 
 const Gallery = (props: { data: any[] }) => {
+  console.log(props)
   return (
     <div
       className='
@@ -17,7 +19,9 @@ const Gallery = (props: { data: any[] }) => {
 
       {props.data.map((image, index) =>
         <div key={index}>
-          <GatsbyImage image={getImage(image.image)} alt="Sample Alter" />
+          <Link to={`/photos/${image.image.childImageSharp.id}/`}>
+            <GatsbyImage image={getImage(image.image)} alt="Sample Alter"/>
+          </Link>
         </div>
       )}
     </div>

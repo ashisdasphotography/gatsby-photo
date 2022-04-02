@@ -17,6 +17,7 @@ export const query = graphql`
         image {
             childImageSharp {
               gatsbyImageData(height: 800)
+              id
           }
         }
       }
