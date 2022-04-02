@@ -14,7 +14,10 @@ const Navigation = () => {
                 uppercase
                 font-courier-new
                 text-lg
-                text-gray-500"
+                text-gray-500
+                invisible
+                md:visible
+              "
             >
                 <NavigationItems />
             </div>
