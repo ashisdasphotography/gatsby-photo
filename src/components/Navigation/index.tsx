@@ -8,15 +8,15 @@ const Navigation = () => {
               className="
                 flex
                 flex-row
-                space-x-10
+                space-x-2
+                md:space-x-10
                 p-8
                 justify-center
                 uppercase
                 font-courier-new
-                text-lg
+                text-sm
+                md:text-lg
                 text-gray-500
-                invisible
-                md:visible
               "
             >
                 <NavigationItems />
