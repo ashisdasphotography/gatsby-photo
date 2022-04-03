@@ -2,9 +2,10 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 
 const Photos = (props) => {
+  console.log(props)
   return (
-    <div>
-      <GatsbyImage image={getImage(props.data.imageSharp)} alt="Sample Alter"/>
+    <div className='w-fit mx-auto'>
+      <GatsbyImage image={getImage(props.imageSharp)} alt="Sample Alter"/>
     </div>
   )
 }

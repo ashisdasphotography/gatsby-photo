@@ -2,19 +2,19 @@ import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Layout from '../../components/Layout'
+import Photos from '../../components/Photos'
 
 const PhotosPage = (props) => {
-  console.log(props)
   return (
     <Layout
-      body={<GatsbyImage image={getImage(props.data.imageSharp)} alt="Sample Alter"/>} />
+      body={<Photos imageSharp={props.data.imageSharp} />} />
   )
 }
 
 export const query = graphql`
   query GetImageQuery($id: String) {
     imageSharp(id: { eq: $id }) {
-      gatsbyImageData(height: 800)
+      gatsbyImageData(height: 1200)
     }
   }
 `
