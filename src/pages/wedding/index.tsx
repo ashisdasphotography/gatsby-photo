@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import React from 'react'
-import Gallery from '../components/Gallery'
-import Layout from "../components/Layout"
+import Gallery from '../../components/Gallery'
+import Layout from "../../components/Layout"
 
 const wedding = ({data}) => {
   return (

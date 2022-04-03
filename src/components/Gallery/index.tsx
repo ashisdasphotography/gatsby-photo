@@ -18,7 +18,7 @@ const Gallery = (props: { data: any[] }) => {
         mx-2'>
 
       {props.data.map((image, index) =>
-        <div key={index}>
+        <div key={index} className='hover:shadow-md hover:shadow-gray-400'>
           <Link to={`/photos/${image.image.childImageSharp.id}/`}>
             <GatsbyImage image={getImage(image.image)} alt="Sample Alter"/>
           </Link>
