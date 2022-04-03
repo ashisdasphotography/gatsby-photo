@@ -7,7 +7,7 @@ import Photos from '../../components/Photos'
 const PhotosPage = (props) => {
   return (
     <Layout
-      body={<Photos imageSharp={props.data.imageSharp} />} />
+      body={<Photos image={props.data.imageSharp} />} />
   )
 }
 
