@@ -6,7 +6,7 @@ import Layout from '../../../components/Layout'
 const WaterCrisis = ({data}) => {
   return (
     <Layout body={
-      <Gallery data={data.allWaterYaml.nodes}/>
+      <Gallery data={data.allWaterYaml.nodes} pathBase='project/water-crisis'/>
     } />
   )
 }
@@ -21,6 +21,7 @@ export const query = graphql`
               id
           }
         }
+        id
       }
     }
   }

@@ -7,9 +7,11 @@ const NavigationItems = () => {
       <div>Selected</div>
       <div>Exhibited</div>
       <div>
-        <Link to="/wedding/" activeClassName="text-black">Wedding</Link>
+        Wedding
       </div>
-      <div>Areal</div>
+      <div>
+        <Link to="/aerial/" activeClassName="text-black">Aerial</Link>
+      </div>
       <div>
         <Link to="/project/water-crisis/" activeClassName="text-black">Project</Link>
       </div>

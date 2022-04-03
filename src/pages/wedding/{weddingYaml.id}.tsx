@@ -2,6 +2,7 @@ import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Layout from '../../components/Layout'
+import Photos from '../../components/Photos'
 
 const PhotosPage = (props) => {
   console.log(props)
@@ -25,13 +26,16 @@ const PhotosPage = (props) => {
     <Layout
       body={
         <div>
-          <GatsbyImage image={getImage(props.data.weddingYaml.image.childImageSharp)} alt="Sample Alter"/>
-          <Link to={`/wedding/${prevId}/`}>
+          {/* <GatsbyImage image={getImage(props.data.weddingYaml.image.childImageSharp)} alt="Sample Alter"/> */}
+
+          <Photos image={props.data.weddingYaml.image.childImageSharp} />
+
+          {/* <Link to={`/wedding/${prevId}/`}>
             <button>Previous</button>
           </Link>
           <Link to={`/wedding/${nextid}/`}>
             <button>Next</button>
-          </Link>
+          </Link> */}
 
         </div>
       } />
