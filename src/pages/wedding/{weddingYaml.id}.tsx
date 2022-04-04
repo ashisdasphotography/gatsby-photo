@@ -47,7 +47,7 @@ export const query = graphql`
     weddingYaml(id: { eq: $id }) {
       image {
         childImageSharp {
-          gatsbyImageData(height: 800)
+          gatsbyImageData(width: 1200)
         }
       }
     }

@@ -46,7 +46,7 @@ export const query = graphql`
     waterYaml(id: { eq: $id }) {
       image {
         childImageSharp {
-          gatsbyImageData(height: 800)
+          gatsbyImageData(width: 1200)
         }
       }
     }

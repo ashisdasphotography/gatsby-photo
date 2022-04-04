@@ -17,7 +17,7 @@ export const query = graphql`
       nodes {
         image {
             childImageSharp {
-              gatsbyImageData(height: 800)
+              gatsbyImageData(width: 400)
               id
           }
         }

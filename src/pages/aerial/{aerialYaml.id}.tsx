@@ -45,7 +45,7 @@ export const query = graphql`
     aerialYaml(id: { eq: $id }) {
       image {
         childImageSharp {
-          gatsbyImageData(height: 800)
+          gatsbyImageData(width: 1200)
         }
       }
     }
