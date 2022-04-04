@@ -13,7 +13,7 @@ const NavigationItems = () => {
         <Link to="/aerial/" activeClassName="text-black">Aerial</Link>
       </div>
       <div>
-        <Link to="/project/water-crisis/" activeClassName="text-black">Project</Link>
+        <Link to="/project/" activeClassName="text-black">Project</Link>
       </div>
       <div>About</div>
     </React.Fragment>
