@@ -26,14 +26,12 @@ const PhotosPage = (props) => {
     <Layout
       body={
         <div className='w-fit mx-auto'>
-          {/* <GatsbyImage image={getImage(props.data.aerialYaml.image.childImageSharp)} alt="Sample Alter"/> */}
-          <Photos image={props.data.aerialYaml.image.childImageSharp} />
-          {/* <Link to={`/aerial/${prevId}/`}>
-            <button>Previous</button>
-          </Link>
-          <Link to={`/aerial/${nextid}/`}>
-            <button>Next</button>
-          </Link> */}
+
+          <Photos
+            image={props.data.aerialYaml.image.childImageSharp}
+            pathParam='aerial'
+            nextId={nextid}
+            prevId={prevId} />
 
         </div>
       } />

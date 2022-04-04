@@ -26,17 +26,11 @@ const PhotosPage = (props) => {
     <Layout
       body={
         <div>
-          {/* <GatsbyImage image={getImage(props.data.weddingYaml.image.childImageSharp)} alt="Sample Alter"/> */}
-
-          <Photos image={props.data.weddingYaml.image.childImageSharp} />
-
-          {/* <Link to={`/wedding/${prevId}/`}>
-            <button>Previous</button>
-          </Link>
-          <Link to={`/wedding/${nextid}/`}>
-            <button>Next</button>
-          </Link> */}
-
+          <Photos
+            image={props.data.weddingYaml.image.childImageSharp}
+            pathParam='wedding'
+            nextId={nextid}
+            prevId={prevId} />
         </div>
       } />
   )

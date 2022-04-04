@@ -26,15 +26,11 @@ const PhotosPage = (props) => {
     <Layout
       body={
         <div>
-          {/* <GatsbyImage image={getImage(props.data.waterYaml.image.childImageSharp)} alt="Sample Alter"/> */}
-          <Photos image={props.data.waterYaml.image.childImageSharp} />
-
-          {/* <Link to={`/project/water-crisis/${prevId}/`}>
-            <button>Previous</button>
-          </Link>
-          <Link to={`/project/water-crisis/${nextid}/`}>
-            <button>Next</button>
-          </Link> */}
+          <Photos
+            image={props.data.waterYaml.image.childImageSharp}
+            pathParam='project/water-crisis'
+            nextId={nextid}
+            prevId={prevId} />
 
         </div>
       } />
