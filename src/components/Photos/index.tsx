@@ -12,10 +12,11 @@ interface PhotoProps {
 }
 
 const Photos = (props: PhotoProps) => {
-  console.log(props)
+  // let prevLink = `/${props.pathParam}/${props.prevId}/`;
+  // let nextLink = `/${props.pathParam}/${props.nextId}/`;
   return (
     <div>
-      <div className='w-fit mx-2'>
+      <div className='w-fit mx-auto px-2'>
         <GatsbyImage
           image={getImage(props.image)}
           alt={props.caption ?? ''} />
@@ -23,13 +24,13 @@ const Photos = (props: PhotoProps) => {
       <div className="flex">
         <NavigationButton
           isActive={props.prevId != null}
-          label='Previous'
+          label='<'
           link={`/${props.pathParam}/${props.prevId}/`}
           className='ml-2'/>
 
         <NavigationButton
           isActive={props.nextId != null}
-          label='Next'
+          label='>'
           link={`/${props.pathParam}/${props.nextId}/`}
           className='ml-auto mr-2'/>
       </div>

@@ -5,7 +5,6 @@ import Layout from '../../components/Layout'
 import Photos from '../../components/Photos'
 
 const PhotosPage = (props) => {
-  console.log(props)
   let allImageIds = props.data.allWeddingYaml.nodes
   let prevId
   let nextid

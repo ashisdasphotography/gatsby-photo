@@ -4,7 +4,6 @@ import Folder, { FolderProps, FolderPropsData } from '../../components/Folder'
 import Layout from '../../components/Layout'
 
 const Project = ({data}) => {
-  console.log(data)
 
   var folders:any[] = data.allProjectFolderYaml.nodes;
 

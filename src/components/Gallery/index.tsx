@@ -12,7 +12,6 @@ interface GalleryProps{
 }
 
 const Gallery = (props: GalleryProps) => {
-  console.log(props)
   return (
     <div
       className='
