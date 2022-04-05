@@ -10,10 +10,10 @@ const NavigationItems = () => {
         Wedding
       </div>
       <div>
-        <Link to="/aerial/" activeClassName="text-black">Aerial</Link>
+        <Link to="/aerial/" activeClassName="text-black font-bold" partiallyActive={true}>Aerial</Link>
       </div>
       <div>
-        <Link to="/project/" activeClassName="text-black">Project</Link>
+        <Link to="/project/" activeClassName="text-black font-bold" partiallyActive={true}>Project</Link>
       </div>
       <div>About</div>
     </React.Fragment>
